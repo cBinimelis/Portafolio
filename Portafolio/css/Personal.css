@@ -1,0 +1,11 @@
+﻿.parallax-container{
+    height:100vh;
+}
+
+.portada{
+   width:100%;
+}
+
+.transparente{
+ background:rgba(38, 50, 56, 0.5);
+}

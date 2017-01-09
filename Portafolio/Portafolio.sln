@@ -22,7 +22,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Portafolio", ".", "{A65F928
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "13318"
 		SlnRelativePath = "..\Portafolio\"
-		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
 Global
