@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Central.master.cs" Inherits="MP_Central" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../css/uikit.min.css" rel="stylesheet" />
+    <link href="../css/sweetalert2.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/sweetalert2.min.js"></script>
+</body>
+</html>
