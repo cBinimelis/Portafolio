@@ -41,19 +41,34 @@
         <div class="ul-section">
             <q class="uk-text-lead">This is how we built sowftware</q>
         </div>
+        <a class="uk-button uk-button-default" data-message="Notification message">Open</a>
     </div>
-    <a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Open</a>
     <div id="modal-full" class="uk-modal-full" uk-modal>
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-full" type="button" uk-close></button>
-        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-            <div class="uk-background-cover" style="background-image: url('../docs/images/photo.jpg');" uk-height-viewport></div>
-            <div class="uk-padding-large">
-                <h1>Headline</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                <div class="uk-background-cover" style="background-image: url('images/Login.jpg');" uk-height-viewport></div>
+                <div class="uk-padding-large">
+                    <h1 class="uk-article-title">Inicio de Sesión</h1>
+                    <p class="uk-article-meta">Ingreso al sistema privado</p>
+                    <div class="uk-section">
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
+                                <input class="uk-input uk-form-blank" id="Username" placeholder="Nombre de Usuario" type="text" />
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
+                                <input class="uk-input uk-form-blank" id="Password" placeholder="Contraseña" type="password" />
+                            </div>
+                        </div>
+                        <button class="uk-button uk-button-secondary" data-message="Notification message">Ingresar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </asp:Content>
 

@@ -1,9 +1,6 @@
-﻿$(document).ready(function () {
-    $('.parallax').parallax();
-    $('.materialboxed').materialbox();
-    $('.target').pushpin({
-        top: 0,
-        bottom: 1000,
-        offset: 0
-    });
+﻿UIkit.notification({
+    message: 'my-message!',
+    status: 'primary',
+    pos: 'top-right',
+    timeout: 5000
 });
