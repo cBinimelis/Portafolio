@@ -55,16 +55,21 @@
                         <div class="uk-margin">
                             <div class="uk-inline">
                                 <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
-                                <input class="uk-input uk-form-blank" id="Username" placeholder="Nombre de Usuario" type="text" />
+                                <input runat="server" class="uk-input uk-form-blank" id="Username" placeholder="Nombre de Usuario" type="text" />
                             </div>
                         </div>
                         <div class="uk-margin">
                             <div class="uk-inline">
-                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
-                                <input class="uk-input uk-form-blank" id="Password" placeholder="Contraseña" type="password" />
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                                <input runat="server" class="uk-input uk-form-blank" id="Password" placeholder="Contraseña" type="password" />
                             </div>
                         </div>
-                        <button class="uk-button uk-button-secondary" data-message="Notification message">Ingresar</button>
+                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                            <ContentTemplate>
+                                <button type="button" runat="server" onserverclick="btn_ingresar_ServerClick" id="btn_ingresar" class="uk-button uk-button-secondary">Ingresar</button>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <meta name="theme-color" content="#455a64" />
+    <link id="favicon1" rel="shortcut icon" href="../images/LogoCB.ico" type="image/x-icon" />
     <link href="../css/uikit.min.css" rel="stylesheet" />
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/uikit.min.js"></script>
@@ -18,10 +19,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="uk-overlay uk-overlay-default uk-position-top-left uk-position-fixed" style="z-index: 1000">
-            <ul class="uk-iconnav">
-                <li><a href="#" uk-icon="icon: plus" uk-toggle="target: #modal-full">+</a></li>
-            </ul>
+        <div class="uk-overlay uk-position-top-left uk-position-fixed" style="z-index: 1000">
+                <a class="uk-icon-button" href="#" uk-icon="icon: sign-in" uk-toggle="target: #modal-full"></a>
         </div>
         <div class="uk-position-medium uk-position-center-right uk-position-fixed" style="z-index: 1000">
             <ul class="uk-dotnav uk-dotnav-vertical" uk-scrollspy-nav="closest: li; scroll: true">
