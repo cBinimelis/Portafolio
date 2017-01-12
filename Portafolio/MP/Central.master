@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es-cl">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
+    <meta name="robots" content="NOODP" />
+    <meta name="description" content="Desarrollo de Software y Aplicaciones tanto web como de escritorio" />
     <meta name="theme-color" content="#455a64" />
     <link id="favicon1" rel="shortcut icon" href="../images/LogoCB.ico" type="image/x-icon" />
     <link href="../css/uikit.min.css" rel="stylesheet" />

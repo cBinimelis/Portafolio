@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home" Language="C#" MasterPageFile="MP/Central.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Title="Cristofer Binimelis | Desarrollo de Software" Language="C#" MasterPageFile="MP/Central.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
@@ -16,18 +16,18 @@
             <div class="uk-article">
                 <h1 class="uk-article-title">¿Quién es Cristofer Binimelis?</h1>
                 <p class="uk-article-meta">Conociendo más a fondo al desarrollador</p>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                     consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                     ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                     quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                    officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, 
+                <div class="uk-text-justify" uk-grid>
+                    <div class="uk-width-1-2">
+                        <p>
+                            Actualmente me encuentro cursando la carrera de <b>Analista Programador</b> 
+                            en el Centro de Formación Técnica de la Universidad Tecnológica de Chile, INACAP.
+                            Soy un desarrollador joven, con muchísmas ganas de descubrir cosas nuevas, enfrentar retos
+                            y avanzar en la vida, porque aunque la vida no es eterna, sí lo pueden ser las huellas que
+                            dejemos en ella, por lo mismo quiero avanzar, dejar marca en alguien, que me revuerden en
+                            las próximas generaciones, ya sea por mis logros profesionales o por mis acciones como persona.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip 
@@ -35,7 +35,25 @@
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
                     officia deserunt mollit anim id est laborum.
-                </p>
+                        </p>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">El desarrollador</h3>
+                                    <p>La distancia que hay entre el éxito y tú la define tu miedo, rompe las barreras,
+                                         supera los obstaculos y afronta la vida día a día, porque el único que te puede
+                                        detener eres tú mismo.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="uk-card-media-left uk-cover-container">
+                                <img src="images/Perfil.jpg" alt="Desarrollador" uk-cover />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="ul-section">
