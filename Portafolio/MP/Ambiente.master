@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Ambiente.master.cs" Inherits="MP_Ambiente" %>
+
+<!DOCTYPE html>
+
+<html lang="es-cl">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link id="favicon1" rel="shortcut icon" href="../images/LogoCB.ico" type="image/x-icon" />
+    <link href="../css/uikit.min.css" rel="stylesheet" />
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/uikit.min.js"></script>
+    <link href="../css/sweetalert2.css" rel="stylesheet" />
+    <link href="../css/Personal.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>   
+    <meta name="theme-color" content="#212121" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <div class="uk-overlay uk-position-top-left uk-position-fixed" style="z-index: 1000">
+                <a class="uk-icon-button" href="#" uk-icon="icon: menu" uk-toggle="target: #offcanvas-push"></a>
+            </div>
+            <div id="offcanvas-push" uk-offcanvas="mode: reveal; overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav uk-nav-default">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span>Item</a></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span>Item</a></li>
+                    </ul>
+                    <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
+
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="../js/sweetalert2.min.js"></script>
+    <script src="../js/JS_Personal.js"></script>
+</body>
+</html>

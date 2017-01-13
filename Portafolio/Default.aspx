@@ -15,28 +15,23 @@
             <div class="uk-article">
                 <h1 class="uk-article-title">¿Quién es Cristofer Binimelis?</h1>
                 <p class="uk-article-meta">Conociendo más a fondo al desarrollador</p>
-                <div class="uk-text-justify" uk-grid>
-                    <div class="uk-width-1-2@m">
+                <div class="uk-text-justify" uk-grid >
+                    <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
                         <p>
-                            Actualmente me encuentro cursando la carrera de <b>Analista Programador</b>
-                            en el Centro de Formación Técnica de la Universidad Tecnológica de Chile, INACAP.
-                            Soy un desarrollador joven, con muchísmas ganas de descubrir cosas nuevas, enfrentar retos
-                            y avanzar en la vida, porque aunque la vida no es eterna, sí lo pueden ser las huellas que
-                            dejemos en ella, por lo mismo quiero avanzar, dejar marca en alguien, que me recuerden en
-                            las próximas generaciones, ya sea por mis logros profesionales o por mis acciones como persona.
+                            Actualmente me encuentro cursando la carrera de <b>Analista Programador</b> en el Centro de Formación 
+                            Técnica de la Universidad Tecnológica de Chile, INACAP. Soy un desarrollador joven, con muchísimas 
+                            ganas de descubrir cosas nuevas, enfrentar retos y avanzar en la vida, porque aunque la vida no es 
+                            eterna, sí lo pueden ser las huellas que dejemos en ella, por lo mismo quiero avanzar, dejar marca 
+                            en alguien, que me recuerden en las próximas generaciones, ya sea por mis logros profesionales o 
+                            por mis acciones como persona.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                    officia deserunt mollit anim id est laborum.
+                            El futuro es incierto, pero soñar nunca es un delito, tengo muchísimas ideas a corto, medio y largo 
+                            plazo y no pienso que nada me detenga para lograrlo. Tengo muchísima confianza en mis conocimientos 
+                            y no dudaré de ellos al momento de enfrentar cada proyecto que se me presente
                         </p>
                     </div>
-                    <div class="uk-width-1-2@m">
+                    <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-fade; delay: 1000; repeat: true">
                         <div class="uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
                             <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
                                 <img src="images/Perfil.jpg" alt="Desarrollador" uk-cover />
