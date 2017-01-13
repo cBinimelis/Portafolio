@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="Cristofer Binimelis | Desarrollo de Software" Language="C#" MasterPageFile="MP/Central.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -17,13 +16,13 @@
                 <h1 class="uk-article-title">¿Quién es Cristofer Binimelis?</h1>
                 <p class="uk-article-meta">Conociendo más a fondo al desarrollador</p>
                 <div class="uk-text-justify" uk-grid>
-                    <div class="uk-width-1-2">
+                    <div class="uk-width-1-2@m">
                         <p>
-                            Actualmente me encuentro cursando la carrera de <b>Analista Programador</b> 
+                            Actualmente me encuentro cursando la carrera de <b>Analista Programador</b>
                             en el Centro de Formación Técnica de la Universidad Tecnológica de Chile, INACAP.
                             Soy un desarrollador joven, con muchísmas ganas de descubrir cosas nuevas, enfrentar retos
                             y avanzar en la vida, porque aunque la vida no es eterna, sí lo pueden ser las huellas que
-                            dejemos en ella, por lo mismo quiero avanzar, dejar marca en alguien, que me revuerden en
+                            dejemos en ella, por lo mismo quiero avanzar, dejar marca en alguien, que me recuerden en
                             las próximas generaciones, ya sea por mis logros profesionales o por mis acciones como persona.
                         </p>
                         <p>
@@ -37,19 +36,21 @@
                     officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
-                    <div class="uk-width-1-2">
+                    <div class="uk-width-1-2@m">
                         <div class="uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                                <img src="images/Perfil.jpg" alt="Desarrollador" uk-cover />
+                                <canvas width="600" height="600"></canvas>
+                            </div>
                             <div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title">El desarrollador</h3>
-                                    <p>La distancia que hay entre el éxito y tú la define tu miedo, rompe las barreras,
+                                    <p>
+                                        La distancia que hay entre el éxito y tú la define tu miedo, rompe las barreras,
                                          supera los obstaculos y afronta la vida día a día, porque el único que te puede
                                         detener eres tú mismo.
                                     </p>
                                 </div>
-                            </div>
-                            <div class="uk-card-media-left uk-cover-container">
-                                <img src="images/Perfil.jpg" alt="Desarrollador" uk-cover />
                             </div>
                         </div>
                     </div>
@@ -82,12 +83,12 @@
                                 <input runat="server" class="uk-input uk-form-blank" id="Password" placeholder="Contraseña" type="password" />
                             </div>
                         </div>
-                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <asp:scriptmanager id="ScriptManager1" runat="server"></asp:scriptmanager>
+                        <asp:updatepanel id="UpdatePanel1" runat="server">
                             <ContentTemplate>
                                 <button type="button" runat="server" onserverclick="btn_ingresar_ServerClick" id="btn_ingresar" class="uk-button uk-button-secondary">Ingresar</button>
                             </ContentTemplate>
-                        </asp:UpdatePanel>
+                        </asp:updatepanel>
                     </div>
                 </div>
             </div>
