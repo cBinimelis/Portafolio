@@ -30,5 +30,9 @@ public partial class _Default : System.Web.UI.Page
         {
             Mensajes("¡Alto ahí!", "No puedes dejar campos vacíos", "warning");
         }
+        else
+        {
+            Response.Redirect("../AmbientePersonal/Inicio.aspx");
+        }
     }
 }

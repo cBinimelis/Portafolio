@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="Cristofer Binimelis | Desarrollo de Software" Language="C#" MasterPageFile="MP/Central.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <meta property="og:title" content="Cristofer Binimelis | Desarrollo de Software">
+    <meta property="og:image" content="images/Perfil.jpg">
+    <meta property="og:url" content="http://cristofer.cl">
+    <meta property="og:description" content="Desarrollo de Software y Aplicaciones tanto web como de escritorio">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="Portada" class="uk-position-relative">
