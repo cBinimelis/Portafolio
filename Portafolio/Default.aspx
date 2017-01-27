@@ -82,12 +82,12 @@
                                 <input runat="server" class="uk-input uk-form-blank" id="Password" placeholder="Contraseña" type="password" />
                             </div>
                         </div>
-                        <asp:scriptmanager id="ScriptManager1" runat="server"></asp:scriptmanager>
-                        <asp:updatepanel id="UpdatePanel1" runat="server">
+                        <asp:ScriptManager id="ScriptManager1" runat="server"></asp:ScriptManager>
+                        <asp:UpdatePanel id="UpdatePanel1" runat="server">
                             <ContentTemplate>
                                 <button type="button" runat="server" onserverclick="btn_ingresar_ServerClick" id="btn_ingresar" class="uk-button uk-button-secondary">Ingresar</button>
                             </ContentTemplate>
-                        </asp:updatepanel>
+                        </asp:UpdatePanel>
                     </div>
                 </div>
             </div>

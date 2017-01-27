@@ -28,7 +28,7 @@ public partial class _Default : System.Web.UI.Page
     {
         if (Username.Value.Trim().Equals("") || Password.Value.Trim().Equals(""))
         {
-            Mensajes("¡Alto ahí!", "No puedes dejar campos vacíos", "warning");
+            ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "UIkit.notification('MyMessage', 'warning', {pos: 'top-left'});", true);
         }
         else
         {
