@@ -4,9 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 public partial class Login : System.Web.UI.Page
 {
+    sql sql = new sql();
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -14,14 +16,40 @@ public partial class Login : System.Web.UI.Page
 
     protected void btn_ingresar_ServerClick(object sender, EventArgs e)
     {
+        try { 
         if (Username.Value.Trim().Equals("") || Password.Value.Trim().Equals(""))
         {
-            ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "UIkit.notification('MyMessage', 'warning', {pos: 'top-left'});", true);
+            Mensajes("Con calma amigo", "No puedes dejar campos vacíos", "warning");
         }
         else
         {
-            Response.Redirect("AmbientePersonal/Inicio.aspx");
+            SqlDataReader usuario = sql.consulta("SELECT * FROM Usuario WHERE LOWER (Nick) Like LOWER('" + Username.Value + "')");
+            if (usuario.Read())
+            {
+                Response.Redirect("AmbientePersonal/Inicio.aspx");
+            }
+            else
+            {
+                Mensajes("¡Ups! No hemos encontrado tu usuario", "Asegurate de ingresar todo correctamente", "info");
+            }
         }
+        }
+        catch(Exception ex)
+        {
+            Mensajes("Algo ha salido mal", "Verifica tus datos de inicio de sesión", "error");
+            Console.Write(ex.Message);
+        }
+    }
+
+    protected void Mensajes(String tit, String msj, String tipo)
+    {
+        ScriptManager.RegisterStartupScript(this, GetType(), "Popup",
+            "swal({" +
+            "title: '" + tit + "'," +
+            "text: '" + msj + "'," +
+            "type: '" + tipo + "'," +
+            "});",
+            true);
     }
 
 

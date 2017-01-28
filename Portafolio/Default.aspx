@@ -8,7 +8,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="uk-overlay uk-position-top-left uk-position-fixed" style="z-index: 1000">
-        <a class="uk-icon-button" href="Login.aspx" uk-icon="icon: sign-in"></a>
+        <a class="uk-icon-button" href="Login.aspx" uk-icon="icon: sign-in" title="Inicio de Sesión" uk-tooltip="pos: right"></a>
     </div>
     <div class="uk-position-medium uk-position-center-right uk-position-fixed" style="z-index: 1000">
         <ul class="uk-dotnav uk-dotnav-vertical" uk-scrollspy-nav="closest: li; scroll: true">
@@ -77,38 +77,6 @@
             <q class="uk-text-lead">This is how we built sowftware</q>
         </div>
         <a class="uk-button uk-button-default" data-message="Notification message">Open</a>
-    </div>
-    <div id="modal-full" class="uk-modal-full" uk-modal>
-        <div class="uk-modal-dialog">
-            <button class="uk-modal-close-full" type="button" uk-close></button>
-            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                <div class="uk-background-cover" style="background-image: url('images/Login.jpg');" uk-height-viewport></div>
-                <div class="uk-padding-large">
-                    <h1 class="uk-article-title">Inicio de Sesión</h1>
-                    <p class="uk-article-meta">Ingreso al sistema privado</p>
-                    <div class="uk-section">
-                        <div class="uk-margin">
-                            <div class="uk-inline">
-                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
-                                <input runat="server" class="uk-input uk-form-blank" id="Username" placeholder="Nombre de Usuario" type="text" />
-                            </div>
-                        </div>
-                        <div class="uk-margin">
-                            <div class="uk-inline">
-                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                                <input runat="server" class="uk-input uk-form-blank" id="Password" placeholder="Contraseña" type="password" />
-                            </div>
-                        </div>
-                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                            <ContentTemplate>
-                                <button type="button" runat="server" onserverclick="btn_ingresar_ServerClick" id="btn_ingresar" class="uk-button uk-button-secondary">Ingresar</button>
-                            </ContentTemplate>
-                        </asp:UpdatePanel>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </asp:Content>
 
