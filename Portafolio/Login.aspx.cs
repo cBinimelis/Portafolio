@@ -16,25 +16,33 @@ public partial class Login : System.Web.UI.Page
 
     protected void btn_ingresar_ServerClick(object sender, EventArgs e)
     {
-        try { 
-        if (Username.Value.Trim().Equals("") || Password.Value.Trim().Equals(""))
+        try
         {
-            Mensajes("Con calma amigo", "No puedes dejar campos vacíos", "warning");
-        }
-        else
-        {
-            SqlDataReader usuario = sql.consulta("SELECT * FROM Usuario WHERE LOWER (Nick) Like LOWER('" + Username.Value + "')");
-            if (usuario.Read())
+            if (Username.Value.Trim().Equals("") || Password.Value.Trim().Equals(""))
             {
-                Response.Redirect("AmbientePersonal/Inicio.aspx");
+                Mensajes("Con calma amigo", "No puedes dejar campos vacíos", "warning");
             }
             else
             {
-                Mensajes("¡Ups! No hemos encontrado tu usuario", "Asegurate de ingresar todo correctamente", "info");
+                SqlDataReader usuario = sql.consulta("SELECT * FROM Usuario WHERE LOWER (Nick) Like LOWER('" + Username.Value + "')");
+                if (usuario.Read())
+                {
+                    if (usuario[5].ToString() == Password.Value)
+                    {
+                        Response.Redirect("AmbientePersonal/Inicio.aspx");
+                    }
+                    else
+                    {
+                        Mensajes("¡Cuidado!", "La contraseña que has ingresado no es correcta", "error");
+                    }
+                }
+                else
+                {
+                    Mensajes("¡Ups! No hemos encontrado tu usuario", "Asegurate de ingresar todo correctamente", "info");
+                }
             }
         }
-        }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             Mensajes("Algo ha salido mal", "Verifica tus datos de inicio de sesión", "error");
             Console.Write(ex.Message);
