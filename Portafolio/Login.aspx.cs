@@ -29,7 +29,22 @@ public partial class Login : System.Web.UI.Page
                 {
                     if (usuario[5].ToString() == Password.Value)
                     {
-                        Response.Redirect("AmbientePersonal/Inicio.aspx");
+                        switch(Convert.ToInt32( usuario[6].ToString()))
+                        {
+                            case 1:
+                                Response.Redirect("AmbientePersonal/Inicio.aspx");
+                                Session["Usuario"] = Username.ToString();
+                                break;
+                            case 2:
+                                Mensajes("You shall not pass!", "Esta cuenta ha sido deshabilitada temporalmente", "warning");
+                                break;
+                            case 3:
+                                Mensajes("Adios Vaquero", "Esta cuenta ha sido suspendida por la administracion", "error");
+                                break;
+                            case 4:
+                                Mensajes("Nada por acá", "Esta cuenta ha sido eliminada", "error");
+                                break;
+                        }
                     }
                     else
                     {
