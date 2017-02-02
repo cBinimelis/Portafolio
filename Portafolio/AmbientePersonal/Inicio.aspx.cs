@@ -9,9 +9,9 @@ public partial class AmbientePersonal_Inicio : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        //if (Session["Usuario"] == null)
-        //{
-        //    Response.Redirect("../Default.aspx");
-        //}
+        if (Session["Usuario"] == null)
+        {
+            Response.Redirect("../Default.aspx");
+        }
     }
 }

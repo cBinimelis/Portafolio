@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 public partial class Login : System.Web.UI.Page
 {
     sql sql = new sql();
+    protected String Sesion = "";
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -29,11 +30,12 @@ public partial class Login : System.Web.UI.Page
                 {
                     if (usuario[5].ToString() == Password.Value)
                     {
-                        switch(Convert.ToInt32( usuario[6].ToString()))
+                        Sesion= usuario["Nick"].ToString();
+                        switch (Convert.ToInt32(usuario[6].ToString()))
                         {
                             case 1:
+                                Session["Usuario"] = Sesion;
                                 Response.Redirect("AmbientePersonal/Inicio.aspx");
-                                Session["Usuario"] = Username.ToString();
                                 break;
                             case 2:
                                 Mensajes("You shall not pass!", "Esta cuenta ha sido deshabilitada temporalmente", "warning");
