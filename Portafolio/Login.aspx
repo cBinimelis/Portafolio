@@ -27,7 +27,7 @@
                 </div>
                 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                     <ContentTemplate>
-                        <button type="button" runat="server" id="btn_ingresar" class="uk-button uk-button-secondary" onserverclick="btn_ingresar_ServerClick">Ingresar</button>
+                        <button type="submit" runat="server" id="btn_ingresar" class="uk-button uk-button-secondary" onserverclick="btn_ingresar_ServerClick">Ingresar</button>
                     </ContentTemplate>
                 </asp:UpdatePanel>
             </div>

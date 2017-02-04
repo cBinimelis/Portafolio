@@ -20,22 +20,34 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div>
             <div class="uk-overlay uk-position-top-right uk-position-fixed" style="z-index: 1000">
                 <a class="uk-icon-button" href="#modalNotas" uk-icon="icon: pencil" title="Nota rápida" uk-tooltip="pos: right" uk-toggle></a>
             </div>
-            <div id="modalNotas" uk-modal="center: true">
+            <div id="modalNotas" uk-modal="center: true" runat="server">
                 <div class="uk-modal-dialog uk-modal-body">
-                    <h2 class="uk-modal-title">Headline</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p class="uk-text-right">
-                        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                        <button class="uk-button uk-button-primary" type="button">Save</button>
-                    </p>
+                    <h2 class="uk-modal-title">Nota Rapida</h2>
+                    <div class="uk-container">
+                        <div class="uk-margin">
+                            <input id="TituloNota" class="uk-input uk-form-blank" type="text" placeholder="Título" runat="server" />
+                        </div>
+                        <div class="uk-margin">
+                            <textarea id="ContenidoNota" class="uk-textarea uk-form-blank" rows="5" placeholder="Contenido de la nota" runat="server"></textarea>
+                        </div>
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                            <ContentTemplate>
+                                <div class="uk-text-right">
+                                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+                                    <button id="BtnNota" class="uk-button uk-button-secondary" title="Guardar Nota" runat="server" type="button" onserverclick="BtnNota_ServerClick">Guardar</button>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
                 </div>
             </div>
-            <div class="uk-overlay uk-position-top-left uk-position-fixed" style="z-index: 1000">
-                <a class="uk-icon-button" href="#" uk-icon="icon: menu" uk-toggle="target: #offcanvas-push"></a>
+            <div class="uk-overlay uk-position-top-left uk-position-fixed uk-hidden@l" style="z-index: 1000">
+                <a class="uk-icon-button" href="#" title="Men" uk-icon="icon: menu" uk-toggle="target: #offcanvas-push"></a>
             </div>
             <div id="offcanvas-push" uk-offcanvas="mode: reveal; overlay: true">
                 <div class="uk-offcanvas-bar">

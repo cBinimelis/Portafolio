@@ -17,6 +17,7 @@ public partial class AmbientePersonal_Inicio : System.Web.UI.Page
         }
         else
         {
+            Session.Timeout = 60;
             cargaDatos();
         }
     }
