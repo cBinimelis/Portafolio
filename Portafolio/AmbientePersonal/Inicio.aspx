@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    <div id="Fondo" class="uk-position-relative">
+    <div id="Fondo" class="uk-position-relative" style="z-index: 999">
         <div class="uk-background-fixed uk-background-cover uk-height-viewport" style="background-image: url(../images/PortadaAmbiente.jpg);"></div>
         <div class="uk-overlay uk-overlay-primary uk-position-center">
             <h1>Interfaz Personal Privada</h1>
@@ -14,7 +14,12 @@
             </p>
         </div>
     </div>
-    <div uk-grid>
+    <div class="uk-card uk-card-default uk-width-1-1" style="z-index: 980;" uk-sticky>
+        <div class="uk-container">
+            <img class=" uk-align-right" src="../images/LogoCB.png" style="height: 50px" />
+        </div>
+    </div>
+    <div id="cuerpo" uk-grid>
         <div class="uk-width-1-6 uk-background-secondary uk-light uk-visible@l">
             <div class="uk-container">
                 <br />
@@ -45,11 +50,10 @@
         </div>
         <div class="uk-width-5-6">
             <div class="uk-card uk-card-body">
-            <h1 class="uk-text-center">¡Bienvenido a tu ambiente personal!</h1>
-                </div>
+                <h1 class="uk-text-center">¡Bienvenido a tu ambiente personal!</h1>
+            </div>
             <div class="uk-container">
                 <div class="uk-section">
-                 
                 </div>
             </div>
         </div>
