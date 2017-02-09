@@ -19,13 +19,13 @@
     <meta name="theme-color" content="#212121" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" method="post">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div>
             <div class="uk-overlay uk-position-top-right uk-position-fixed" style="z-index: 1000">
                 <a class="uk-icon-button" href="#modalNotas" uk-icon="icon: pencil" title="Nota rápida" uk-tooltip="pos: right" uk-toggle></a>
             </div>
-            <div id="modalNotas" uk-modal="center: true" runat="server">
+            <div id="modalNotas" uk-modal="center: true" runat="server" uk-grid>
                 <div class="uk-modal-dialog uk-modal-body">
                     <h2 class="uk-modal-title">Nota Rapida</h2>
                     <div class="uk-container">
@@ -37,6 +37,10 @@
                         </div>
                         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                             <ContentTemplate>
+                                <div class="uk-text-center">
+                                    <asp:Label ID="Notificacion" CssClass="uk-text-warning" runat="server" Text="" Visible="false"></asp:Label>
+                                </div>
+                                <br />
                                 <div class="uk-text-right">
                                     <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
                                     <button id="BtnNota" class="uk-button uk-button-secondary" title="Guardar Nota" runat="server" type="button" onserverclick="BtnNota_ServerClick">Guardar</button>

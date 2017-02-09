@@ -54,6 +54,15 @@
             </div>
             <div class="uk-container">
                 <div class="uk-section">
+                    <p class="uk-text-justify">
+                        Este es el sistema privado de organización de ideas, series, 
+                        películas y otros elementos. Aquí puedes encontrar un lugar en 
+                        el cual puedes ordenar todas aquellas ideas fugaces que pasan por 
+                        tu cabeza, así como también los planes que aparecen y desaparecen 
+                        de la nada de tu mente. Puedes llevar una categorización de los 
+                        mismos, ya sea para ser ejecutados en corto, mediano o largo plazo, 
+                        así como también un registro de los avances y ediciones que se han hecho a la fecha.
+                    </p>
                 </div>
             </div>
         </div>

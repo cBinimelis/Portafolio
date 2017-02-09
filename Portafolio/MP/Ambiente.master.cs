@@ -18,10 +18,14 @@ public partial class MP_Ambiente : System.Web.UI.MasterPage
         {
             if (TituloNota.Value.Trim().Equals("") || ContenidoNota.Value.Trim().Equals(""))
             {
-                Mensajes("Sin Prisas", "No puedes dejar campos vacíos", "info");
-            }else
+                Notificacion.Text = "No puedes dejar campos vacíos";
+                Notificacion.Visible = true;
+            }
+            else
             {
-                Mensajes("¡Hurra!", "Tu nota ha sido exitosamente guardada", "success");
+                Notificacion.CssClass = "uk-text-success";
+                Notificacion.Text = "No puedes dejar campos vacíos";
+                Notificacion.Visible = true;
             }
         }
         catch (Exception ex)
