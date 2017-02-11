@@ -63,6 +63,14 @@
                         mismos, ya sea para ser ejecutados en corto, mediano o largo plazo, 
                         así como también un registro de los avances y ediciones que se han hecho a la fecha.
                     </p>
+                    <p class="uk-text-justify">
+                        La organizacion es un tema muy importante en el día a día, si no comprendemos la imporcancia 
+                        de esta, no tardaremos mucho en llenar nustra vida de caos, por lo mismo, y para facilitar 
+                        el orden, he decidido crear este ambiente personal de organización, si estás leyendo esto, es 
+                        porque estás formando parte de una ligera manía mía, el tener todo bajo control. Puede 
+                        que para algunos les parezca un poco tonto o quizá y hasta absurdo, pero cada quien tiene 
+                        gustos diferentes, y el mío radica en el orden.
+                    </p>
                 </div>
             </div>
         </div>
