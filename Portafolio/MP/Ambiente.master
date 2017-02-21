@@ -26,8 +26,8 @@
                 <a class="uk-icon-button" href="#modalNotas" uk-icon="icon: pencil" title="Nota rápida" uk-tooltip="pos: right" uk-toggle></a>
             </div>
             <div id="modalNotas" uk-modal="center: true" runat="server" uk-grid>
-                <div class="uk-modal-dialog uk-modal-body">
-                    <h2 class="uk-modal-title">Nota Rapida</h2>
+                <fieldset class="uk-modal-dialog uk-modal-body">
+                    <legend class="uk-modal-title">Nota Rapida</legend>
                     <div class="uk-container">
                         <div class="uk-margin">
                             <input id="TituloNota" class="uk-input uk-form-blank" type="text" placeholder="Título" runat="server" />
@@ -48,7 +48,7 @@
                             </ContentTemplate>
                         </asp:UpdatePanel>
                     </div>
-                </div>
+                </fieldset>
             </div>
             <div class="uk-overlay uk-position-top-left uk-position-fixed uk-hidden@l" style="z-index: 1000">
                 <a class="uk-icon-button" href="#" title="Men" uk-icon="icon: menu" uk-toggle="target: #offcanvas-push"></a>

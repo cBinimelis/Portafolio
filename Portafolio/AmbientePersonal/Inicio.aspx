@@ -32,17 +32,20 @@
                         <div class="uk-accordion-content uk-active">
                             <a href="Inicio.aspx">Notas </a>
                         </div>
+                        <div class="uk-accordion-content uk-active">
+                            <a href="Aniversario.aspx">Aniversario </a>
+                        </div>
                     </li>
                     <li>
-                        <h3 class="uk-accordion-title">Item 2</h3>
+                        <h3 class="uk-accordion-title">Mantenimiento</h3>
                         <div class="uk-accordion-content">
                             <p>Articulo 2</p>
                         </div>
                     </li>
                     <li>
-                        <h3 class="uk-accordion-title">Item 3</h3>
+                        <h3 class="uk-accordion-title">Perfil</h3>
                         <div class="uk-accordion-content">
-                            <p>Articulo 3</p>
+                            <a href="../Default.aspx">Salir</a>
                         </div>
                     </li>
                 </ul>
