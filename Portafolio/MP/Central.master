@@ -9,6 +9,7 @@
     <link href="../css/uikit.min.css" rel="stylesheet" />
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.js"></script>
     <link href="../css/sweetalert2.css" rel="stylesheet" />
     <link href="../css/Personal.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
